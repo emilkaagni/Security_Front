@@ -1,0 +1,139 @@
+.chatpage-chat-container {
+    display: flex;
+    height: 100vh;
+}
+
+.chatpage-sidebar {
+    width: 30%;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.chatpage-new-conversation {
+    font-weight: bold;
+    color: #f05668;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.chatpage-contacts {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.chatpage-contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.chatpage-contact-item:hover {
+    background-color: #e2e6ea;
+}
+
+.chatpage-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chatpage-contact-info {
+    flex: 1;
+}
+
+.chatpage-name {
+    font-weight: bold;
+}
+
+.chatpage-last-message {
+    color: #6c757d;
+}
+
+.chatpage-chat-window {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.chatpage-chat-header {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.chatpage-messages {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.chatpage-message {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.chatpage-message.chatpage-sent {
+    justify-content: flex-end;
+}
+
+.chatpage-message.chatpage-sent .chatpage-avatar {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.chatpage-message.chatpage-sent .chatpage-message-content {
+    background-color: #f1f0f0;
+    align-self: flex-end;
+    border-radius: 10px 10px 0 10px;
+    margin-left: auto;
+    text-align: right;
+}
+
+.chatpage-message.chatpage-received .chatpage-message-content {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-start;
+    border-radius: 10px 10px 10px 0;
+    margin-right: auto;
+}
+
+.chatpage-message-content {
+    max-width: 70%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatpage-time {
+    align-self: flex-end;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.chatpage-message-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #e9ecef;
+}
+
+.chatpage-message-input input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+}
+
+.chatpage-message-input input:focus {
+    outline: none;
+}
