@@ -1,0 +1,129 @@
+.appointment-management-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.appointment-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.appointment-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.appointment-card:hover {
+    transform: translateY(-5px);
+}
+
+.appointment-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appointment-header h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+.appointment-header p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.appointment-details p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.appointment-details p strong {
+    color: #333;
+}
+
+.status {
+    padding: 3px 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+.status.pending {
+    background-color: #ffc107;
+}
+
+.status.confirmed {
+    background-color: #28a745;
+}
+
+.status.cancelled {
+    background-color: #dc3545;
+}
+
+.appointment-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.confirm-btn,
+.cancel-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.confirm-btn:hover {
+    background-color: #218838;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #c82333;
+}
+
+.loading,
+.error-message,
+.no-appointments {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
