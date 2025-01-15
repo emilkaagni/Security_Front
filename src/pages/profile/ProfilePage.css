@@ -1,0 +1,109 @@
+.profile-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.profile-tabs button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+}
+
+.profile-tabs button.active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+.profile-content,
+.profile-form,
+.reset-password {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-details p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.profile-form .form-group {
+    margin-bottom: 20px;
+}
+
+.profile-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.profile-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.profile-form button {
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-form button:hover {
+    background: #0056b3;
+}
+
+
+  body {
+    margin: 0;
+    font-family: Segoe UI, Tahoma, sans-serif;
+  }
+  
+  .Sample input,
+  .Sample button {
+    font: inherit;
+  }
+  
+  .Sample header {
+    background-color: #323639;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+  }
+  
+  .Sample header h1 {
+    font-size: inherit;
+    margin: 0;
+  }
+  
+
+  
+  .Sample__container__content .react-calendar {
+    margin: 0 auto;
+  }
