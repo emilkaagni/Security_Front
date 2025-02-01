@@ -94,6 +94,8 @@
 //         }
 //     );
 // };
+
+
 // // Get the logged-in user's appointments
 // export const getUserAppointments = () => Api.get('/api/appointments/myappointments', config());
 // // Update payment method for an appointment
